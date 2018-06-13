@@ -1,0 +1,193 @@
+/* RESET CSS */
+* { box-sizing: border-box; margin: 0; }
+
+/* Général - Tous */
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+	font-weight: 100;
+	color: white;
+	background-color: #3b4050;
+}
+
+
+.structure 
+{
+	display: flex;
+	flex-direction: column;
+	flex: 5;
+	order: 2;
+}
+
+/* Header - Nav */
+header{ background: rgba(0,0,0,0.35); height: 4em; }
+
+#nav_website ul
+{
+  font-size: 1em;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style: none;
+}
+
+#nav_website ul li
+{
+    -ie-transition:0.4s;
+    -o-transition:0.4s;
+    -moz-transition:0.4s;
+    -webkit-transition:0.4s;
+    padding: 0 5em;
+}
+
+#nav_website ul li:hover { border-top: 1em solid white; }
+
+#nav_website ul li a
+{
+  font-weight: 700;
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding-top: 1em;
+}
+
+/* Article - Section */
+article h1
+{
+	text-align: center;
+	padding: 1em;
+}
+
+article section
+{
+	text-align: justify;
+	padding-top: 2em;
+	margin: 0 5em 0 5em;
+}
+
+article section h2
+{
+	text-align: center;
+	border-bottom: 0.1em solid;
+}
+
+article section h3
+{
+	padding-top: 0.9em;
+	padding-bottom: 0.9em;
+	text-align: center;
+}
+
+article section p, article section address
+{
+	padding-top: 0.5em;
+	font-size: 1.15em;
+}
+
+article section p a
+{
+	color: #4682B4;
+}
+
+article section img
+{
+	margin-top: 1em;
+	margin-bottom: 0.5em; 
+}
+
+article section address pre, article section pre
+{
+	text-align: left;
+	white-space: pre-line;
+}
+
+
+/* Aside */
+#menu_left 
+{
+background: rgba(0,0,0,0.35);
+border-right: 0.2em solid white;
+flex: 1;
+order: 1;
+width: 30em;
+}
+
+#menu_left h2
+{
+	margin: 0.5em 0 0 0.6em;
+	font-size: 1.2em;
+}
+
+#menu_left nav
+{
+	margin: 1em 0 1em -0.8em;
+	list-style: none;
+}
+
+#menu_left nav ul li a:before
+{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.1em;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+#menu_left nav ul li a 
+{
+	text-decoration: none;
+	color: white;
+	position: relative;
+}
+
+#menu_left nav li a:hover
+{
+	color: white;
+
+}
+
+#menu_left nav li a:hover:before
+{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+#menu_left nav ul li ul li a
+{
+	font-size: 0.96em;
+}
+
+#menu_left #section_recherche 
+{
+	border-top: 0.2em solid white;
+}
+
+#menu_left #section_recherche form
+{
+	margin: 1em 0 0 0.2em; 
+}
+
+#menu_left #section_recherche form fieldset
+{
+	border:none;
+}
+#menu_left #section_recherche form fieldset label
+{
+	padding-bottom: 0.1em;
+
+}
+
+#menu_left #section_recherche form fieldset #barre
+{
+    padding:0 70px 0 20px;
+}
